@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <meta lang = en>
+  <meta charset = utf-8>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+  <h1 id = "title" >Survey of surveys</h1>
+  <p id = "description" >This is a survey about surveys</p>
+  <form id = "survey-form" >
+    <fieldset>
+    <label id = "name-label" for = "name">Enter your name:
+
+    <input placeholder = "Name" id = "name" type = "text" required></label>
+
+    <label id = "email-label" for = "email">Enter your email
+
+    <input placeholder = "Email" id = "email" type = "email" required></label>
+
+    <label id = "number-label" for = "number">Enter your age:
+
+    <input placeholder = "Age" id = "number" type = "number" min = "13" max = "90"></label>
+    </fieldset>
+    <fieldset>
+    <label for = "dropdown">How do you feel about surveys?</label>
+        <select id = "dropdown">
+          <option value = "" hidden selected>Select One</option>
+          <option value = "1">I don't mind taking surveys</option>
+          <option value = "2">I like taking surveys</option>
+          <option value = "3">I really enjoy taking survyes</option>
+          </select>
+        </fieldset>
+    <fieldset>
+
+      <p>Which would you rather do?</p>
+      <label for = "choiceOne"><input value ="Take" class = "inline" id = "choiceOne" name = "choice" type = "radio">Take a survey</label>
+    
+      <label for = "choiceTwo"><input value = "make" class = "inline" id = "choiceTwo" name = "choice" type = "radio">Make a survey</label>
+
+    </fieldset>
+    
+    <fieldset>
+
+      <p>Preferred topic</p>
+      <label>
+      <input class = "inline" value = "choice 1" type = "checkbox">Animals</label>
+      
+      <label>
+      <input class = "inline" value = "choice 2" type = "checkbox">Vehicles</label>
+
+      <label>
+      <input class = "inline" value = "choice 3" type = "checkbox">Architecture</label>
+
+      <label>
+      <input class = "inline" value = "choice 4" type = "checkbox">Environment</label>
+      <label>
+        <input class="inline" type="checkbox" value = "choice 5"/>Pudding
+      </label>
+    </fieldset>
+
+       <fieldset>
+      <textarea placeholder = "additional comments" id = "comments"></textarea>
+    </fieldset>
+    <input id = "submit" type = "submit" value = "Submit"/>
+  </form>
+</body>
